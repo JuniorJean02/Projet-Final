@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f09469366ac063c489f772c4b8032bc0
+guid: 01597944567d1b948bc017017b7fc7d0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -149,202 +149,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Terrain Srpite Sheet_0
+      name: 32x32-bat-sprite_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 352
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c46fd8c148bd13b4695396b46152ca10
-      internalID: -718440704
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Terrain Srpite Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 352
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8777d5bc07bcea64f9d756e38a38a4be
-      internalID: 970681539
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Terrain Srpite Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 352
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 883b0b6027c0bff448aef124879fb700
-      internalID: -24518874
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Terrain Srpite Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 481
-        y: 352
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5aaae1c7155fd7945b50d36f1e7f8c7c
-      internalID: 1458700256
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Terrain Srpite Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 513
-        y: 352
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 66037097ea9d2d94fbab253d80397675
-      internalID: -464493637
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Terrain Srpite Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 545
-        y: 352
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 46a3b51c8d21b0444b0f5c7331d6b3c6
-      internalID: -357795877
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Terrain Srpite Sheet_6
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 352
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2e5ea5f48b6185c4d9ff9dfed9c202f8
-      internalID: -546211706
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Terrain Srpite Sheet_7
-      rect:
-        serializedVersion: 2
-        x: 481
-        y: 352
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2e1732211c627b846b2e81d1c2c8d9fe
-      internalID: -1373051623
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Terrain Srpite Sheet_
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 129
-        width: 32
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fb331055c9d6aa847b9be0b047718168
-      internalID: 244375472
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Terrain Srpite Sheet_8
-      rect:
-        serializedVersion: 2
-        x: 480
+        x: 3
         y: 97
-        width: 32
-        height: 32
+        width: 25
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -352,20 +163,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed70193d697f3514296791f2e6baa1b8
-      internalID: -1144002444
+      spriteID: d2fc9cf2deafb294089747469a61fc92
+      internalID: 1777552621
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain Srpite Sheet_9
+      name: 32x32-bat-sprite_1
       rect:
         serializedVersion: 2
-        x: 480
-        y: 65
-        width: 32
-        height: 32
+        x: 35
+        y: 101
+        width: 27
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -373,20 +184,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf84ac07dd2551545bbccd25d4b577aa
-      internalID: -568267899
+      spriteID: c2c72fff136dd744aa65ea7de33f0bee
+      internalID: 154197017
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain Srpite Sheet_10
+      name: 32x32-bat-sprite_2
       rect:
         serializedVersion: 2
-        x: 480
-        y: 33
-        width: 32
-        height: 32
+        x: 66
+        y: 107
+        width: 29
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -394,167 +205,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9af01c0197549c347adfd595c49b383c
-      internalID: -1592639277
+      spriteID: 271a994abfeae32438d96c8f1e62b3d3
+      internalID: 1423167623
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain Srpite Sheet_11
+      name: 32x32-bat-sprite_3
       rect:
         serializedVersion: 2
-        x: 574
-        y: 128
-        width: 33
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 76027655367cd05469708cf4ac61e1f5
-      internalID: 1173127516
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Terrain Srpite Sheet_12
-      rect:
-        serializedVersion: 2
-        x: 607
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 443b633c04273434f8a82156a3d5fa45
-      internalID: 804966293
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Terrain Srpite Sheet_13
-      rect:
-        serializedVersion: 2
-        x: 639
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 369128ded958dd8478e99e031259afaf
-      internalID: -2129405328
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Terrain Srpite Sheet_14
-      rect:
-        serializedVersion: 2
-        x: 575
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e9c34ac83ecd06749a5692d552a157a0
-      internalID: -165777971
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Terrain Srpite Sheet_15
-      rect:
-        serializedVersion: 2
-        x: 607
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ad14e02983863ec47b228bf0a1720cd7
-      internalID: 1571346955
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Terrain Srpite Sheet_16
-      rect:
-        serializedVersion: 2
-        x: 639
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1d8946c6cc0c661418a0f2d660880885
-      internalID: 735251434
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Terrain Srpite Sheet_17
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 97
-        width: 62
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bbc30e469e260154ebced938d711cfd0
-      internalID: -660128675
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Terrain Srpite Sheet_18
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 34
+        x: 97
+        y: 106
         width: 31
-        height: 63
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -562,20 +226,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f596e4b74bdff5a4488493dfccbc2917
-      internalID: 821498111
+      spriteID: 3428bc256635ac841948b975eff40c24
+      internalID: 1153474578
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain Srpite Sheet_19
+      name: 32x32-bat-sprite_4
       rect:
         serializedVersion: 2
-        x: 543
-        y: 34
-        width: 30
-        height: 63
+        x: 7
+        y: 64
+        width: 19
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -583,8 +247,239 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70ef2013d6ab2f04e88afcaf775727fd
-      internalID: 150307207
+      spriteID: dc6c4842b35a58944bbb7bfa9591a0cb
+      internalID: 1253939167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32-bat-sprite_5
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 74
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45929fd6764c6ce4483a4b9773877cb4
+      internalID: 611703888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32-bat-sprite_6
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 75
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5323d078ddde1584a841065ad668ef69
+      internalID: 2041748115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32-bat-sprite_7
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 69
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef518348dea704845ac4d9e5c315be37
+      internalID: 560886174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32-bat-sprite_8
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 37
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d74c571504f9c144a58be1a4974b17d
+      internalID: 1026042612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32-bat-sprite_9
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 45
+        width: 29
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6dc59072332ad44593e2ff5888b6885
+      internalID: -872459926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32-bat-sprite_10
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 43
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e78c0ae6406cf844ba354158df3445d
+      internalID: -1024376226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32-bat-sprite_11
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 33
+        width: 25
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e117858647bf1942910186b6079cb17
+      internalID: -2037708652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32-bat-sprite_12
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 0
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22e39a0c99b994049a49b06cf559e56a
+      internalID: -1720743607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32-bat-sprite_13
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 10
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f9b1f5e8f0bb204883e39155706d989
+      internalID: 1747863137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32-bat-sprite_14
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 11
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 037ce1ce1f4a70443bff64c631896786
+      internalID: 1124798645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32-bat-sprite_15
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 5
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9f4d74c7ea4d404698df8277cb540a0
+      internalID: 1464385400
       vertices: []
       indices: 
       edges: []
@@ -600,27 +495,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Terrain Srpite Sheet_: 244375472
-      Terrain Srpite Sheet_0: -718440704
-      Terrain Srpite Sheet_1: 970681539
-      Terrain Srpite Sheet_10: -1592639277
-      Terrain Srpite Sheet_11: 1173127516
-      Terrain Srpite Sheet_12: 804966293
-      Terrain Srpite Sheet_13: -2129405328
-      Terrain Srpite Sheet_14: -165777971
-      Terrain Srpite Sheet_15: 1571346955
-      Terrain Srpite Sheet_16: 735251434
-      Terrain Srpite Sheet_17: -660128675
-      Terrain Srpite Sheet_18: 821498111
-      Terrain Srpite Sheet_19: 150307207
-      Terrain Srpite Sheet_2: -24518874
-      Terrain Srpite Sheet_3: 1458700256
-      Terrain Srpite Sheet_4: -464493637
-      Terrain Srpite Sheet_5: -357795877
-      Terrain Srpite Sheet_6: -546211706
-      Terrain Srpite Sheet_7: -1373051623
-      Terrain Srpite Sheet_8: -1144002444
-      Terrain Srpite Sheet_9: -568267899
+      32x32-bat-sprite_0: 1777552621
+      32x32-bat-sprite_1: 154197017
+      32x32-bat-sprite_10: -1024376226
+      32x32-bat-sprite_11: -2037708652
+      32x32-bat-sprite_12: -1720743607
+      32x32-bat-sprite_13: 1747863137
+      32x32-bat-sprite_14: 1124798645
+      32x32-bat-sprite_15: 1464385400
+      32x32-bat-sprite_2: 1423167623
+      32x32-bat-sprite_3: 1153474578
+      32x32-bat-sprite_4: 1253939167
+      32x32-bat-sprite_5: 611703888
+      32x32-bat-sprite_6: 2041748115
+      32x32-bat-sprite_7: 560886174
+      32x32-bat-sprite_8: 1026042612
+      32x32-bat-sprite_9: -872459926
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
