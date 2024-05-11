@@ -6,6 +6,8 @@ public class MediumBatsFactory : MonoBehaviour
 {
     public static MediumBatsFactory Instance { get; private set; }
 
+    [SerializeField] int MediumEnemyAmount;
+
     int MediumBatsIndex;
 
     [SerializeField] GameObject yellowBat;
@@ -14,16 +16,19 @@ public class MediumBatsFactory : MonoBehaviour
 
     private void Awake()
     {
-        Instance = this;
-
         PopulateMediumBatsPool();
+
+        if (Instance != null && Instance != this)
+            Destroy(this.gameObject);
+        else
+            Instance = this;
     }
 
     private void PopulateMediumBatsPool()
     {
         pooledMediumBatsEnemies = new List<GameObject>();
 
-        for (int i = 0; i < 50 / 4; i++)
+        for (int i = 0; i < MediumEnemyAmount; i++)
         {
             pooledMediumBatsEnemies.Add(Clone(yellowBat));
         }
@@ -31,9 +36,19 @@ public class MediumBatsFactory : MonoBehaviour
 
     public GameObject CreateMediumEnemies()
     {
-        pooledMediumBatsEnemies[MediumBatsIndex++ % pooledMediumBatsEnemies.Count].SetActive(true);
+        MediumBatsIndex %= pooledMediumBatsEnemies.Count;
+        GameObject mediumEnemy = pooledMediumBatsEnemies[MediumBatsIndex++];
+        // Debug.Log($"Medium Enemy {MediumBatsIndex}: [{mediumEnemy.transform.position}]");
+        mediumEnemy.SetActive(true);
+        return mediumEnemy;
 
-        return pooledMediumBatsEnemies[MediumBatsIndex];
+        // Debug.Log(MediumBatsIndex);
+        // // if (MediumBatsIndex >= 0)
+        // Debug.Log($"Medium Enemy {MediumBatsIndex}: [{pooledMediumBatsEnemies[MediumBatsIndex].transform.position}]");
+        // pooledMediumBatsEnemies[MediumBatsIndex++ % pooledMediumBatsEnemies.Count].SetActive(true);
+        // return pooledMediumBatsEnemies[MediumBatsIndex];
+
+        // return null;
     }
 
     public GameObject Clone(GameObject objToClone)

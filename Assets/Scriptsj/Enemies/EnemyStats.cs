@@ -10,8 +10,8 @@ public class EnemyStats : MonoBehaviour, IDamageable
     private float currentHealth;
 
     public UnityEvent OnEnemyDeathEvent;
-    public UnityEvent OnEnemyHitEvent;
-    private bool isDead;
+    public UnityEvent<GameObject> OnEnemyHitEvent;
+    [SerializeField] private bool isDead;
 
     private AudioSource audioSource;
 
@@ -43,12 +43,32 @@ public class EnemyStats : MonoBehaviour, IDamageable
     //TODO: finish the OnHit event for the enemy (so that it receives damage from the players weapons)// 
     public void OnHit(float damagePoints)
     {
+        Debug.Log("EnemyHealth");
+        Debug.Log("BITCH SHIT");
+
         Health -= damagePoints;
+    }
+
+    public void OnEnemyHit(float damagePoints, GameObject attackSender)
+    {
+        Debug.Log($"TEST - Enemy {attackSender.name}");
+        if (isDead) return;
+
+        Health -= damagePoints;
+        OnEnemyHitEvent?.Invoke(attackSender);
+
+        // if ()
+    }
+
+    public void TEST()
+    {
+        Debug.Log("BITCH SHIT");
     }
 
     public void OnDeath()
     {
         audioSource.PlayOneShot(enemyData.DeathSFX);
+        this.gameObject.SetActive(false);
         GameObject itemDropInstance = Instantiate(enemyData.ItemDrop, transform.parent);
         itemDropInstance.transform.SetParent(null);
     }

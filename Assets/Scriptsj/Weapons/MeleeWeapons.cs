@@ -8,10 +8,6 @@ public class MeleeWeapons : MonoBehaviour
     public float destrayAfterSeconds;
     protected virtual void Start()
     {
-
         Destroy(gameObject, destrayAfterSeconds);
-        
     }
-
-   
 }

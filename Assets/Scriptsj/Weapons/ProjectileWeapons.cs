@@ -2,7 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(CircleCollider2D))]
+// abstract class LookState
+// {
+//     protected 
+// }
+
+public enum E_LookState
+{
+    RIGHT = 1,
+    LEFT = 2,
+    UP = 3,
+    DOWN = 4,
+}
+
+// [RequireComponent(typeof(CircleCollider2D))]
 public class ProjectileWeapons : MonoBehaviour
 {
     public WeaponScriptableObjects weaponData;
@@ -28,6 +41,7 @@ public class ProjectileWeapons : MonoBehaviour
 
         if (dirx < 0 && diry == 0)// left
         {
+
             scale.x = scale.x * -1;
             scale.y = scale.y * -1;
         }
@@ -56,19 +70,8 @@ public class ProjectileWeapons : MonoBehaviour
             scale.x = scale.x * -1;
             scale.y = scale.y * -1;
             rotation.z = 0f;
-
         }
         transform.localScale = scale;
         transform.rotation = Quaternion.Euler(rotation);
-    }
-
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other == null) return;
-
-        if (other.collider.CompareTag("Enemy"))
-        {
-            other.gameObject.GetComponent<EnemyStats>().OnEnemyHitEvent.Invoke();
-        }
     }
 }

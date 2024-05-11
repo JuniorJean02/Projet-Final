@@ -18,12 +18,12 @@ public class MapController : MonoBehaviour
     public float maxOpDist;
     float opDist;
     float optimizerCooldown;
-   public  float optimizerCooldownDur;
+    public float optimizerCooldownDur;
 
     // Start is called before the first frame update
     void Start()
     {
-        pm = FindObjectOfType<PlayerMovement>();    
+        pm = FindObjectOfType<PlayerMovement>();
     }
 
     // Update is called once per frame
@@ -35,20 +35,22 @@ public class MapController : MonoBehaviour
 
     void ChunkChekcker()
     {
-        if(!currentChunk)
-        { return; } 
+        if (!currentChunk)
+        { return; }
 
 
-        if(pm.moveDir.x > 0 && pm.moveDir.y ==0)//right
+        if (pm.moveDir.x > 0 && pm.moveDir.y == 0)//right
         {
             if (!Physics2D.OverlapCircle(currentChunk.transform.Find("right").position, checkerRadius, terrainMask))
-            { noTerrainePosition = currentChunk.transform.Find("right").position; SpawnChuck(); }  
+            { noTerrainePosition = currentChunk.transform.Find("right").position; SpawnChuck(); }
         }
         else if (pm.moveDir.x < 0 && pm.moveDir.y == 0)//left
         {
             if (!Physics2D.OverlapCircle(currentChunk.transform.Find("left").position, checkerRadius, terrainMask))
-            { noTerrainePosition = currentChunk.transform.Find("left").position; 
-                SpawnChuck(); }
+            {
+                noTerrainePosition = currentChunk.transform.Find("left").position;
+                SpawnChuck();
+            }
         }
 
         else if (pm.moveDir.x == 0 && pm.moveDir.y > 0)//up
@@ -71,8 +73,8 @@ public class MapController : MonoBehaviour
 
         else if (pm.moveDir.x > 0 && pm.moveDir.y < 0)//rightdown
         {
-            if (!Physics2D.OverlapCircle(currentChunk.transform.Find("Rightdown").position, checkerRadius, terrainMask))
-            { noTerrainePosition = currentChunk.transform.Find("Rightdown").position; SpawnChuck(); }
+            if (!Physics2D.OverlapCircle(currentChunk.transform.Find("RightDown").position, checkerRadius, terrainMask))
+            { noTerrainePosition = currentChunk.transform.Find("RightDown").position; SpawnChuck(); }
         }
 
         else if (pm.moveDir.x < 0 && pm.moveDir.y > 0)//leftup 
@@ -97,7 +99,7 @@ public class MapController : MonoBehaviour
 
     void ChunkOptimizer()
     {
-        optimizerCooldown -=  Time.deltaTime;   
+        optimizerCooldown -= Time.deltaTime;
         if (optimizerCooldown <= 0f)
         {
             optimizerCooldown = optimizerCooldownDur;
@@ -106,12 +108,12 @@ public class MapController : MonoBehaviour
         else
         { return; }
 
-        foreach(GameObject chunk in spawnedChuks)
+        foreach (GameObject chunk in spawnedChuks)
         {
             opDist = Vector3.Distance(player.transform.position, chunk.transform.position);
-            if (opDist > 0)
+            if (opDist > maxOpDist)
             {
-                chunk.SetActive(false); 
+                chunk.SetActive(false);
             }
 
             else

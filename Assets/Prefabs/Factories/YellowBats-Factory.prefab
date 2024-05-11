@@ -98,6 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6cb82618b68de84db2d36d57b04e3bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MediumEnemyAmount: 25
   yellowBat: {fileID: 3287230212367701699, guid: 77ea9c5ff2eaa98469ee18f8ecac8660, type: 3}
   pooledMediumBatsEnemies: []
 --- !u!114 &4576535206329746318

@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Timeline;
 using UnityEngine;
 
 public class KnifeController : WeaponController
 {
     // Start is called before the first frame update
-   protected override void Start()
+    protected override void Start()
     {
         base.Start();
     }
@@ -17,6 +18,5 @@ public class KnifeController : WeaponController
         GameObject spawendKnife = Instantiate(weaponData.Prefab);
         spawendKnife.transform.position = transform.position;
         spawendKnife.GetComponent<KnifeBehaviour>().Directioncheker(pm.lastMovedVector);
-
     }
 }

@@ -31,9 +31,19 @@ public class HardBatsFactory : MonoBehaviour
 
     public GameObject CreateHardEnemies()
     {
-        pooledHardBatsEnemies[HardBatsIndex++ % pooledHardBatsEnemies.Count].SetActive(true);
+        HardBatsIndex %= pooledHardBatsEnemies.Count;
+        GameObject hardEnemy = pooledHardBatsEnemies[HardBatsIndex++];
+        // Debug.Log($"Medium Enemy {MediumBatsIndex}: [{mediumEnemy.transform.position}]");
+        hardEnemy.SetActive(true);
+        return hardEnemy;
 
-        return pooledHardBatsEnemies[HardBatsIndex];
+        // Debug.Log(MediumBatsIndex);
+        // // if (MediumBatsIndex >= 0)
+        // Debug.Log($"Medium Enemy {MediumBatsIndex}: [{pooledMediumBatsEnemies[MediumBatsIndex].transform.position}]");
+        // pooledMediumBatsEnemies[MediumBatsIndex++ % pooledMediumBatsEnemies.Count].SetActive(true);
+        // return pooledMediumBatsEnemies[MediumBatsIndex];
+
+        // return null;
     }
 
     public GameObject Clone(GameObject objToClone)

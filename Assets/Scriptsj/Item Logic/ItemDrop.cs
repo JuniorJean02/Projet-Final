@@ -20,10 +20,19 @@ public class ItemDrop : MonoBehaviour
         EnemySpriteRenderer.sprite = enemyItemDropsSO != null ? enemyItemDropsSO.ItemDropSprite : null;
     }
 
+    public void LevelUpPlayer()
+    {
+        PlayerStats.Instance.LevelUpChecker();
+        UIManager.Instance.UpdateLevelCount();
+    }
+
     public void AddPlayerExp()
     {
         Debug.Log("PlayerXP Before: " + PlayerStats.Instance.experience);
+        // PlayerStats.Instance.IncreaseExperience(enemyItemDropsSO.ItemDropTypePoints);
         PlayerStats.Instance.experience += enemyItemDropsSO.ItemDropTypePoints;
+        UIManager.Instance.UpdateExperienceCount();
+        // PlayerStats
         Debug.Log("PlayerXP After: " + PlayerStats.Instance.experience);
     }
 

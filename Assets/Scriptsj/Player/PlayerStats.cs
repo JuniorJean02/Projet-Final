@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerStats : MonoBehaviour, IDamageable
 {
@@ -9,7 +10,7 @@ public class PlayerStats : MonoBehaviour, IDamageable
     public static PlayerStats Instance { get => (instance == null) ? instance = FindObjectOfType<PlayerStats>() : instance; }
     public CharacterScriptableObject CharacterData { get => characterData; set => characterData = value; }
 
-    public static event Action OnPlayerDeath;
+    public UnityEvent OnPlayerDeath;
 
     public float Health
     {
@@ -33,6 +34,7 @@ public class PlayerStats : MonoBehaviour, IDamageable
     }
 
     public float CurrentHealth { get => currentHealth; set => currentHealth = value; }
+    public bool PlayerIsDead { get => playerIsDead; set => playerIsDead = value; }
 
     [SerializeField] private CharacterScriptableObject characterData;
 
@@ -77,18 +79,24 @@ public class PlayerStats : MonoBehaviour, IDamageable
         experienceCap = levelRanges[0].experienceCapIncrease;
     }
 
-    public void IncreaseExperience(int amout)
-    {
-        experience += amout;
-        LevelUpChecher();
-    }
+    // public void UpdatePlayerUI()
+    // {
+    //     UIManager.Instance.UpdateExperienceCount();
+    // }
 
-    void LevelUpChecher()
+    // public void IncreaseExperience(int amout)
+    // {
+    //     Debug.Log("XP Points" + amout);
+    //     experience += amout;
+    //     LevelUpChecker();
+    // }
+
+    public void LevelUpChecker()
     {
         if (experience >= experienceCap)
         {
             level++;
-            experience -= experienceCap;
+            experience = 0;
             int experiencCapIncrease = 0;
             foreach (LevelRange range in levelRanges)
             {
@@ -106,8 +114,8 @@ public class PlayerStats : MonoBehaviour, IDamageable
 
     public void OnHit(float damagePoints)
     {
-        Debug.Log(Health - damagePoints);
-        Debug.Log(CurrentHealth - damagePoints);
+        // Debug.Log(Health - damagePoints);
+        // Debug.Log(CurrentHealth - damagePoints);
 
         if (!playerIsDead)
             Health -= damagePoints;
@@ -116,6 +124,7 @@ public class PlayerStats : MonoBehaviour, IDamageable
 
     public void OnDeath()
     {
-        throw new System.NotImplementedException();
+        UIManager.Instance.GameOverPanelActive();
+        this.gameObject.SetActive(false);
     }
 }

@@ -32,9 +32,11 @@ public class EasyBatsFactory : MonoBehaviour
 
     public GameObject CreateEasyEnemies()
     {
-        pooledEasyBatsEnemies[EasyBatsIndex++ % pooledEasyBatsEnemies.Count].SetActive(true);
-
-        return pooledEasyBatsEnemies[EasyBatsIndex];
+        EasyBatsIndex %= pooledEasyBatsEnemies.Count;
+        GameObject easyEnemy = pooledEasyBatsEnemies[EasyBatsIndex++];
+        // Debug.Log($"Medium Enemy {MediumBatsIndex}: [{mediumEnemy.transform.position}]");
+        easyEnemy.SetActive(true);
+        return easyEnemy;
     }
 
     public GameObject Clone(GameObject objToClone)
